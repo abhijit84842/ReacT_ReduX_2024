@@ -4,7 +4,15 @@ import viteLogo from "/vite.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  let foodItems = ["Dall", "Green Vegitable", "Roti", "Milk", "Salad"];
+  let foodItems = [
+    "Dall",
+    "Green Vegitable",
+    "Roti",
+    "Milk",
+    "Salad",
+    "Ghee",
+    "Banana",
+  ];
   return (
     <>
       <center>
