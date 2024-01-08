@@ -3,7 +3,7 @@ const FoodList = ({ items }) => {
   // destructring the data from items array
   return (
     <>
-      <ul class="list-group">
+      <ul className="list-group">
         {items.map((list) => (
           <Item key={list} foodlist={list}></Item>
         ))}
