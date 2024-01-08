@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import FoodList from "./Componenets/FoodList";
 import ErrorMsg from "./Componenets/ErrorMsg";
-import "./Style.css";
+import "./App.css";
 function App() {
   let foodItems = ["Chicken", "Motton", "Egg", "Banana"];
   return (

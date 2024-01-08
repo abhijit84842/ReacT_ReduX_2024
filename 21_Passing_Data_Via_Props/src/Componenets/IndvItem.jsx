@@ -1,6 +1,11 @@
+import style from "./IndvItem.module.css";
 const Item = ({ foodlist }) => {
   // destructring the data from array
 
-  return <li className="list-group-item kg-item">{foodlist}</li>;
+  return (
+    <li className={`${style["kg-item"]}`}>
+      <span className={style["kg-span"]}>{foodlist}</span>
+    </li>
+  );
 };
 export default Item;
