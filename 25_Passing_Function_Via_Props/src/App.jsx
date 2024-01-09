@@ -8,11 +8,15 @@ import { useState } from "react";
 function App() {
   let foodItems = ["Chicken", "Motton", "Egg", "Banana"];
 
-  let textStateArr = useState("Food item entered by user .."); // useState hook will return a arr which is contain 2 value 1)current value 2) current value editing method
+  // Maintaing the State..
+  //let textStateArr = useState("Food item entered by user .."); // useState hook will return a arr which is contain 2 value 1)current value 2) current value editing method
   // now the initial value of useState is "Food item entered by user .."
 
-  let textToShow = textStateArr[0]; // take the current value of this arr into textToShow variable.
-  let setTextState = textStateArr[1];
+  //let textToShow = textStateArr[0]; // take the current value of this arr into textToShow variable.
+  //let setTextState = textStateArr[1];
+
+  // we can also write the above code in one line using Array destructring
+  let [textToShow, setTextState] = useState("Food item entered by user ..");
 
   console.log(`currenet value of textState:${textToShow}`); // show the current value in console
 
