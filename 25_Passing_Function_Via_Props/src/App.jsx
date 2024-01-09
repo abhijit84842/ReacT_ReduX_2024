@@ -6,11 +6,15 @@ import CustomBox from "./Components/CustomBox";
 
 function App() {
   let foodItems = ["Chicken", "Motton", "Egg", "Banana"];
+
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+  };
   return (
     <>
       <Container>
         <h1 className="food-heading">Protein Food Items List</h1>
-        <CustomBox></CustomBox>
+        <CustomBox handleOnChange={handleOnChange}></CustomBox>
         <FoodList items={foodItems}></FoodList>
         <ErrorMsg items={foodItems}></ErrorMsg>
       </Container>

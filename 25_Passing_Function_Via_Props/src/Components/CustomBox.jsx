@@ -1,9 +1,6 @@
 import styles from "./CustomBox.module.css";
 
-const CustomBox = () => {
-  const handleOnChange = (event) => {
-    console.log(event.target.value);
-  };
+const CustomBox = ({ handleOnChange }) => {
   return (
     <input
       className={styles.custombox}
