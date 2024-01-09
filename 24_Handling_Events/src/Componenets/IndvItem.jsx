@@ -5,6 +5,14 @@ const Item = ({ foodlist }) => {
   return (
     <li className={`${style["kg-item"]} list-group-item `}>
       <span className={style["kg-span"]}>{foodlist}</span>
+      <button
+        className={`${style.button} btn btn-success`}
+        onClick={() => {
+          console.log(`${foodlist} being bought..`);
+        }}
+      >
+        Buy
+      </button>
     </li>
   );
 };
