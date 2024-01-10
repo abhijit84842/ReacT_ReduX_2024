@@ -1,6 +1,15 @@
+import { useState } from "react";
 import Item from "./IndvItem";
 const FoodList = ({ items }) => {
   // destructring the data from items array
+
+  // define a State
+  let [activeItems, setActiveItems] = useState([]);
+
+  let onBuyButton = (list, event) => {
+    let newItems = [...activeItems, list];
+    setActiveItems(newItems);
+  };
   return (
     <>
       <ul className="list-group">
@@ -8,7 +17,8 @@ const FoodList = ({ items }) => {
           <Item
             key={list}
             foodlist={list}
-            handleBuyButton={() => console.log(`${list} bought..`)}
+            bought={activeItems.includes(list)}
+            handleBuyButton={(event) => onBuyButton(list, event)}
           ></Item>
         ))}
       </ul>
