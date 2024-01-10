@@ -1,0 +1,13 @@
+.kg-item{
+background-color: rgb(178, 246, 239);
+}
+
+.kg-span{
+    font-weight: 500;
+    color: darkgoldenrod;
+}
+
+.button{
+    float: right ;      /* to take the button righ side */
+
+}
